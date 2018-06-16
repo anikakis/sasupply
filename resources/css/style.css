@@ -1,0 +1,304 @@
+/*Universal Styles*/
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+
+}
+
+.container {
+  width: 960px;
+}
+
+/*Header Section*/
+
+header {
+  height: 2.32rem;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+header span {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+/*Content Container Section*/
+
+.content {
+
+}
+
+/*Main Product Section*/
+
+.main {
+  height: 25rem;
+  width: 100%;
+  background-image: url(../images/moto.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.main .container {
+
+}
+
+.main .banner {
+  width: 25rem;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  margin-top: 9rem;
+}
+
+.main h1 {
+  font-size: 2rem;
+  padding-top: 0.25rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+
+}
+
+.main h3 {
+  font-size: 1rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+
+/*Navigation Bar Section*/
+
+.navbar {
+  background-color: firebrick;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .box {
+  padding: 0.75rem 0;
+}
+
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*Store Section*/
+
+.featured {
+  display: flex;
+  justify-content: center;
+}
+
+.featured .container {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.featured .product {
+  border: 4px solid black;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.featured .product h4 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+#pen {
+  height: 9rem;
+  width: auto;
+  margin: 2rem 0;
+}
+
+#watch {
+  height: 9rem;
+  width: auto;
+  margin: 2rem 0;
+}
+
+#glasses {
+  width: 9rem;
+  margin-bottom: 4rem;
+}
+
+/*Location Section*/
+
+.location {
+  display: flex;
+  justify-content: center;
+}
+
+.location .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 4rem 0;
+}
+
+.location .container .box {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.location #title {
+  background-color: black;
+  color: white;
+  padding: 1rem 0 1rem 2rem;
+  margin-bottom: 0.25rem;
+}
+
+/*Footer Section*/
+
+.footer {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+}
+
+/*Desktop Media Query*/
+
+@media only screen and (min-width: 1024px) {
+
+  /*Navigation Bar Section*/
+
+  .navbar .container #m-hide {
+    display: none;
+  }
+
+}
+
+/*Tablet Media Query*/
+
+@media only screen and (max-width: 1024px) {
+
+  /*Navigation Bar Section*/
+
+  .navbar .container #b-hide {
+    display: none;
+  }
+
+  .navbar .container {
+    justify-content: center;
+  }
+
+  /*Store Section*/
+
+  .featured #g-hide {
+    display: none;
+  }
+
+  .featured .product {
+    width: 47%;
+  }
+
+}
+
+/*Smartphone Media Query*/
+
+@media only screen and (max-width: 470px) {
+
+  /*Header Section*/
+
+  header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header span {
+    display: none;
+  }
+
+  /*Main Product Section*/
+
+  .main {
+    height: 15rem;
+  }
+
+  .main .banner {
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    margin-top: 10rem;
+  }
+
+  .main h1 {
+    font-size: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 2rem;
+
+  }
+
+  .main h3 {
+    font-size: 0.77rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+
+  /*Store Section*/
+
+  .featured #w-hide {
+    display: none;
+  }
+
+  .featured .product {
+    width: 90%;
+  }
+
+  .featured .container {
+    justify-content: center;
+  }
+
+  /*Location Section*/
+
+  .location .container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 4rem 0;
+  }
+
+  .location .container .box {
+    width: 90%;
+    margin-top: 1rem;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+}
